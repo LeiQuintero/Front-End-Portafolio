@@ -1,0 +1,25 @@
+.contenidoinicial {
+    border-radius:50px;
+    margin: 15px 15px;
+    padding: auto;
+    border-color: aquamarine;
+}
+.mat-card#first-card{
+    padding: 10px;
+}
+
+div#profile-bg{
+    display: flex;
+    z-index: 1;
+}
+div#profile-bg img{
+    width: 50%;
+    border-radius: 50px 50px;
+}
+.prifile-image {
+    border-radius:50px;
+    width:100px;
+    height:100%;
+    margin-top: -50px;
+    z-index: 1;
+}
