@@ -1,0 +1,25 @@
+img {
+  width: 2000px;
+  height: 400px;
+}
+
+  .bg-portada {
+    color: rgb(144, 15, 15);
+  }
+
+  .container { 
+    border-style: solid;
+    border-radius: 8px;
+    border-color:grey;
+    padding: 25px;
+  }
+
+ 
+  h1 {
+    margin-bottom: 30px;
+    color: rgb(38, 38, 138);
+}
+
+.container{
+  flex-direction: column;
+}

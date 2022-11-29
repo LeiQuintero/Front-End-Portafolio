@@ -1,0 +1,94 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggler="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
+          </li>
+
+          <li class="nov-item">
+            <a class="nav-link active" aria-current="page" routerLink="/encabezado" 
+            *ngIf="isLogin"> Encabezado</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <button class="btn btn-outline-success" type="button" *ngIf="!isLogin" 
+          routerLink="/login">Login</button>
+          <button class="btn btn-outline-success" type="button" *ngIf="isLogin"
+          (click)="btnLogout()">Logout</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+
+<!--Menú
+      <section class="container-left" id="menu">
+        <div class="row"> 
+          <div class="col-1">        
+            <nav id="tmSidebar" class="tm-bg-black-transparent tm-sidebar">
+              <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="tm-sidebar-sticky">
+                <div class="tm-brand-box">
+                  <div class="tm-double-border-1">
+                    <div class="tm-double-border-2">
+                      <h2 class="tm-brand text-uppercase">Leidy Quintero</h2>
+                    </div>
+                  </div>
+                </div>
+              <ul id="tmMainNav" class="nav flex-column text-uppercase text-right tm-main-nav">
+                <li class="nav-item">
+                  <a href="" class="nav-link active">
+                    <span class="d-inline-block mr-3">Acerca de mi</span>
+                    <span class="d-inline-block tm-black-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <span class="d-inline-block mr-3">Experiencia</span>
+                    <span class="d-inline-block tm-black-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <span class="d-inline-block mr-3">Educación</span>
+                    <span class="d-inline-block tm-black-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="nav-link">
+                    <span class="d-inline-block mr-3">Habilidades</span>
+                    <span class="d-inline-block tm-black-rect"></span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#talk" class="nav-link">
+                    <span class="d-inline-block mr-3">Contáctame</span>
+                    <span class="d-inline-block tm-black-rect"></span>
+                  </a>
+                </li>
+               </ul>
+             </div>
+            </nav>
+          </div>     
+        </div>
+     </section>
+ <section>-->
+    

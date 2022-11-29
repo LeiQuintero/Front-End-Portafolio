@@ -1,0 +1,42 @@
+.img-responsive {
+  object-fit: cover;
+}
+
+.header {
+  position: relative;
+}
+
+
+
+.img-profile {
+  position: absolute;
+  left: 20px;
+  bottom: -100px;
+  border-radius: 50%;
+  border-style: double;
+  border-color: rgb(217, 211, 208);
+  height: 230px;
+  width: 230px;
+  margin-bottom:100px;
+}
+
+.container{
+    border-style: double;
+    border-color: rgb(217, 211, 208);
+    background-color:  rgb(246, 242, 242)
+}
+
+.texto {
+    text-align: left;
+    margin-left: 250px;
+}
+
+
+h1 {
+    margin-bottom: 30px;
+    color: rgb(38, 38, 138);
+}
+
+h3, h4 {
+    color: rgb(38, 38, 138);
+}

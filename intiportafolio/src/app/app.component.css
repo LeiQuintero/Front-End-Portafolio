@@ -1,0 +1,26 @@
+.container { 
+    border-style: solid;
+    border-radius: 8px;
+    border-color:grey;
+    padding: 25px;
+  }
+
+  .borderostro {
+    border-radius: 10px;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+
+  
