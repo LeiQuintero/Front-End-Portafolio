@@ -27,24 +27,23 @@ div{
 /*Estilo de la foto de perfil*/
 @media(min-width: 576px){
     #fotoperfil {
+      width: 270px;
+      height: 270px;
+      background-size: cover;
+      border-radius: 50%;
+      margin-top: 5;
       position: absolute;
-        width: 20%;
-        height: 250px;
-        border-radius: 90%;
-       
-        top: 350px;
-        left:10%;
-        
-        
-
+      border-radius: 90%;
+      top: 350px;
+      left:10%;
     }
 }
 
 
 @media(max-width: 576px){
     #fotoperfil {
-        width: 20%;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         border-radius: 90%;
         box-shadow: 3px 3px 3px grey;
         left:33%;
@@ -58,4 +57,9 @@ img {
     
     height: 350px;
     width: 2500px;
+  }
+
+  
+  .boder {
+    border: 0ex;
   }

@@ -8,10 +8,10 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { ContactameComponent } from './components/contactame/contactame.component';
 
 const routes: Routes = [
-  { path: '', component: AcercaDeComponent },
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'acerca-de', component: AcercaDeComponent },
   { path: 'login', component: LoginComponent },
- 
   { path: 'experiencia-estudios', component: ExperienciaEstudiosComponent },
   { path: 'habilidades', component: HabilidadesComponent },
   { path: 'contactame', component: ContactameComponent}

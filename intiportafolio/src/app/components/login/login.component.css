@@ -5,3 +5,14 @@
   .border-danger{
     border-color: red;
   }
+
+.fotologin {
+  background-color: rgb(187, 206, 239);
+  height: 300px;
+  width: 600px;
+}
+
+.fondo {
+  background-color:  rgb(187, 206, 239);
+ }
+

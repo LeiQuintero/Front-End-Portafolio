@@ -8,7 +8,7 @@ import { AuthorizationService } from 'src/app/servicio/services/authorization.se
   styleUrls: ['./encabezadoperfil.component.css']
 })
 export class EncabezadoperfilComponent implements OnInit {
-  datosportafolio: any;
+  
 
   //inyectamos la dependencia del servicio
     

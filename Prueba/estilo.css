@@ -23,3 +23,10 @@ div#profile-bg img{
     margin-top: -50px;
     z-index: 1;
 }
+
+.container { 
+    border-style: solid;
+    border-radius: 8px;
+    border-color:grey;
+    padding: 25px;
+  }
