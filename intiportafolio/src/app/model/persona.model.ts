@@ -1,0 +1,14 @@
+//se crea la clase que permite interactuar con las clases externas
+
+export class Persona {
+    id?: number;
+    nombre: String;
+    apellido: String;
+    img: String;
+
+    constructor(nombre: String, apellido: String, img: String) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.img = img;
+    }
+}

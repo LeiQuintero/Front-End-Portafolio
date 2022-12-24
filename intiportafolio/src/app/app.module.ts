@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 //Importar el módulo de boostrap ng
 import {NgbPaginationModule, NgbAlertModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { interceptorProvider } from './service/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,9 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    interceptorProvider
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

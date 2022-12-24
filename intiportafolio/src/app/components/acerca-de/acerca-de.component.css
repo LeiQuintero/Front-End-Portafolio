@@ -27,8 +27,8 @@ div{
 /*Estilo de la foto de perfil*/
 @media(min-width: 576px){
     #fotoperfil {
-      width: 270px;
-      height: 270px;
+      width: 260px;
+      height: 260px;
       background-size: cover;
       border-radius: 50%;
       margin-top: 5;

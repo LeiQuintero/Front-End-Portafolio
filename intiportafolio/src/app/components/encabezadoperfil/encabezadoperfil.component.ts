@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TokenService } from 'src/app/service/token.service';
 import { PortafolioService } from 'src/app/servicio/portafolio.service';
 import { AuthorizationService } from 'src/app/servicio/services/authorization.service';
 
@@ -8,21 +10,25 @@ import { AuthorizationService } from 'src/app/servicio/services/authorization.se
   styleUrls: ['./encabezadoperfil.component.css']
 })
 export class EncabezadoperfilComponent implements OnInit {
-  
+   isLogged = false;
 
-  //inyectamos la dependencia del servicio
-    
-  constructor(private auth:AuthorizationService) {}
+  constructor(private router:Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
-      }
-
-  public get isLogin(): boolean {
-    return this.auth.isUserLogIn();
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    }else{
+      this.isLogged = false;
+    }//si tengo el token estoy conectado, de lo cotnrario no 
   }
 
-  public btnLogout(): void {
-    this.auth.logout();
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
+  }
+
+  login(){
+    this.router.navigate(['/login'])
   }
 
 }

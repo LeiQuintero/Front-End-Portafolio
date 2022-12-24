@@ -1,33 +1,43 @@
-<div class="row  my-5">
-   
-        
-    <div class="col-sm-11 col-md-6 col-lg-4 mx-auto my-auto card fondo">
-        <div class="row d-flex align-items-center justify-content-center h-100">
-            <div class="col-md-8 col-lg-7 col-xl-6">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
-                class="img-fluid fotologin" alt="Phone image">
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  
+              <div class="mb-md-5 mt-md-4 pb-5">
+  
+                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+                <p class="text-white-50 mb-5">Por favor, ingresar usuario y clave</p>
+  
+                <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+  
+                  <div class="form-outline form-white mb-4">
+                    <input type="email" id="nombreUsuario"  class="form-control form-control-lg"
+                      [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
+                    <label class="form-label" for="nombreUsuario">Usuario</label>
+                  </div>
+  
+                  <div class="form-outline form-white mb-4">
+                    <input type="password" id="password"  class="form-control form-control-lg" 
+                    [(ngModel)]="password" name="password" required />
+                    <label class="form-label" for="password">Password</label>
+                  </div>
+  
+                  <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+  
+                </form>
+  
+              </div>
+  
+              <div>
+                <p class="mb-0">¿No tienes una cuenta? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+                </p>
+              </div>
+  
             </div>
-        <form> 
-            <!--Email input-->
-            <div class="form-outline mb-4">
-                <label class="form-label" for="loginTxtEmail"> Email </label>
-                <input type="email" id="loginTxtEmail" class="form-control" 
-                name="loginTxtEmail" [(ngModel)]="loginTxtEmail"/>
-            </div>
-
-            <!--password input-->
-            <div class="form-outline mb-4">
-                <label class="form-label" for="loginTxtPwd">Password </label>
-                <input type="password" id="loginTxtPwd" class="form-control"
-                name="loginTxtPwd" [(ngModel)]="loginTxtPwd"/>
-            </div>
-
-            <!--submit button-->
-            <button type="submit" class="btn btn-primary btn-lg btn-block mb-4 col-12 col-sm-12 col-md-6"
-            (click)="btnLogin()">
-                Iniciar Sesión </button>
-        </form>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
+  </section>

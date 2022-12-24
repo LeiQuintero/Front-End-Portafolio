@@ -25,10 +25,10 @@
         </ul>
 
         <form class="d-flex">
-          <button class="btn btn-outline-success" type="button" *ngIf="!isLogin" 
-          routerLink="/login">Login</button>
-          <button class="btn btn-outline-success" type="button" *ngIf="isLogin"
-          (click)="btnLogout()">Logout</button>
+          <button type="button" class="btn btn-outline-light" 
+          (click)="login()" *ngIf="!isLogged">Login</button>
+          <button type="button" class="btn btn-outline-light" 
+          (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
         </form>
       </div>
     </div>
