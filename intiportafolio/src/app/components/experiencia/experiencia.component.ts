@@ -1,22 +1,21 @@
-/*import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { SExperienciaService } from 'src/app/service/s-experiencia.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
-  selector: 'app-experiencia-estudios',
-  templateUrl: './experiencia-estudios.component.html',
-  styleUrls: ['./experiencia-estudios.component.css']
+  selector: 'app-experiencia',
+  templateUrl: './experiencia.component.html',
+  styleUrls: ['./experiencia.component.css']
 })
-export class ExperienciaEstudiosComponent implements OnInit {
-//traigo el model experiencia
+export class ExperienciaComponent implements OnInit {
   expe: Experiencia[] = [];
 
   constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService) { }
 
   isLogged = false;
 
-  ngOnInit(): void { // se valida si estamos logueados o no 
+  ngOnInit(): void {
     this.cargarExperiencia();
     if (this.tokenService.getToken()) {
       this.isLogged = true;
@@ -40,4 +39,4 @@ export class ExperienciaEstudiosComponent implements OnInit {
       )
     }
   }
-}*/
+}
