@@ -9,6 +9,8 @@ import { HabilidadesComponent } from './components/habilidades/habilidades.compo
 import { ContactameComponent } from './components/contactame/contactame.component';
 import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
 import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'experiencia', component: ExperienciaComponent },
   { path: 'nuevaexp', component: NewExperienciaComponent },
   //para poder darle la ruta para editar la exp debo asignarle el id a buscar/editar
-  { path: 'editexp/:id', component: EditExperienciaComponent},
+  { path: 'editexp/:id', component: EditExperienciaComponent },
+  { path: 'nuevaedu', component: NeweducacionComponent },
+  { path: 'editedu/:id', component: EditeducacionComponent},
   { path: 'habilidades', component: HabilidadesComponent },
   { path: 'contactame', component: ContactameComponent}
 ];
