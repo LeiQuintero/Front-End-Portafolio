@@ -10,7 +10,8 @@ import { Experiencia } from '../model/experiencia';
 
 export class SExperienciaService {
   
-    expURL = 'http://localhost:8080/explab/'; // con esto se conecta al back con @RequestMapping en el Controller CE
+  expURL = 'http://localhost:8080/explab/';
+    // con esto se conecta al back con @RequestMapping en el Controller CE
              
     //URL = environment.URL + 'explab/';
  

@@ -2,40 +2,33 @@
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+          <div class="card text-black" style="border-radius: 1rem;">
             <div class="card-body p-5 text-center">
   
-              <div class="mb-md-5 mt-md-4 pb-5">
-  
-                <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                <p class="text-white-50 mb-5">Por favor, ingresar usuario y clave</p>
+              <div class="  pb-3">
+                 
+                <h2 class="fw-bold mb-3 text-uppercase"> Login</h2>
+                <p class="text-50 mb-5"> Por favor, ingresa usuario y clave</p>
+                <img src="https://drive.google.com/uc?export=view&id=1LI4P9_UJgS8N4cQWkY0dxcodu8_CqAuz" alt="login" class="fotologin mb-3">
   
                 <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
   
                   <div class="form-outline form-white mb-4">
                     <input type="email" id="nombreUsuario"  class="form-control form-control-lg"
                       [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
-                    <label class="form-label" for="nombreUsuario">Usuario</label>
+                    <label class="form-label" for="nombreUsuario"> <strong>Usuario</strong>  </label>
                   </div>
   
-                  <div class="form-outline form-white mb-4">
+                  <div class="form-outline form-white mb-5">
                     <input type="password" id="password"  class="form-control form-control-lg" 
                     [(ngModel)]="password" name="password" required />
-                    <label class="form-label" for="password">Password</label>
+                    <label class="form-label" for="password"> <strong>Password</strong>  </label>
                   </div>
   
-                  <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
-  
+                  <button class="btn btn-outline btn-lg px-5" type="submit"> <strong> Login</strong>  </button>
                 </form>
-  
+                </div>
               </div>
-  
-              <div>
-                <p class="mb-0">¿No tienes una cuenta? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
-                </p>
-              </div>
-  
-            </div>
           </div>
         </div>
       </div>

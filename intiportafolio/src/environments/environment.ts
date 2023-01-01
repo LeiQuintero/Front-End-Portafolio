@@ -4,6 +4,8 @@
 
 export const environment = {
   production: false
+
+ // URL = 'http://localhost:8080/', // después tengo que sumar la url del proyecto subido
 };
 
 /*

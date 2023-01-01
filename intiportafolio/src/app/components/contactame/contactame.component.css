@@ -4,9 +4,28 @@ img {
     margin-top: 25px;
     margin-left: 50px;
     margin-right: 50px;
+    
+}
+
+#GitHub{
+    width: 95px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 25px;
 }
 
 #Mail {
     width: 85px;
     margin-top: 15px;
+}
+
+.formu {
+   
+    padding: 10px;
+    border: 5px solid rgb(123, 152, 180);
+    border-radius: 5px;
+    box-shadow: 20 10px 20px rgba(152, 85, 131, 0.1);
 }

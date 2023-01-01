@@ -1,18 +1,32 @@
-.error{
-    color:red
+@media(min-width: 576px){
+  .fotologin {
+    background-color: rgb(187, 206, 239);
+    height: 250px;
+    width: 350px;
   }
-  
-  .border-danger{
-    border-color: red;
-  }
-
-.fotologin {
-  background-color: rgb(187, 206, 239);
-  height: 300px;
-  width: 600px;
 }
 
-.fondo {
-  background-color:  rgb(187, 206, 239);
+
+@media(max-width: 576px){
+  .fotologin {
+    background-color: rgb(187, 206, 239);
+    height: 300px;
+    width: 400px;
+  }
+}
+
+
+.card {
+  
+  border: 8px solid rgb(123, 152, 180);
+  border-radius: 5px;
+  box-shadow: 20 10px 20px rgba(152, 85, 131, 0.1);
+ }
+
+ .btn{
+  border: 3px solid rgb(123, 152, 180);
+  border-radius: 5px;
+  box-shadow: 20 10px 20px rgba(152, 85, 131, 0.1);
+  font-size: x-large;
  }
 

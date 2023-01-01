@@ -1,5 +1,10 @@
 h1 {
+   
     color: rgb(38, 38, 138);
+}
+
+h2 {
+        color: rgb(38, 38, 138);
 }
 
 
@@ -27,8 +32,8 @@ div{
 /*Estilo de la foto de perfil*/
 @media(min-width: 576px){
     #fotoperfil {
-      width: 260px;
-      height: 260px;
+      width: 240px;
+      height: 240px;
       background-size: cover;
       border-radius: 50%;
       margin-top: 5;

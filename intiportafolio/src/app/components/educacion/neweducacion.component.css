@@ -1,0 +1,41 @@
+.formu {
+   
+    padding: 10px;
+    border: 8px solid rgb(123, 152, 180);
+    border-radius: 5px;
+    box-shadow: 20 10px 20px rgba(152, 85, 131, 0.1);
+}
+
+.container{
+     font-size: medium;
+     font-style: inherit;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     border-top: 500px;
+}
+
+@media(min-width: 576px){
+    img {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width:900px;
+        height: 250px;
+        display: block;
+        margin: auto;
+        
+    }
+    
+}
+
+@media(max-width: 576px){
+    img {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width:1200px;
+        height: 350px;
+        display: block;
+        margin: auto;
+        
+    }
+    
+}
+

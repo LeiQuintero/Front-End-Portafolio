@@ -1,17 +1,19 @@
-<div class="container">
-    <div class="row">
+<br>
+<div class="container mb-3">
+    <div class="row formu">
         <div>
+            <img src="https://drive.google.com/uc?export=view&id=1raMOqfnvkpZnfb_AFxnBQJaeAOr9g5HQ" alt="Agregar">
             <!--cuando clickeamos onSubmit será onCreate-->
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreE"> Institución</label>
-                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+                    <label for="nombreE" class="mb-3"> Institución</label>
+                    <input type="text" class="form-control mb-3" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Descripcion de estudio</label>
-                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
+                    <label for="descripcionE" class="mb-3">Descripcion de estudio</label>
+                    <input type="text" class="form-control mb-3" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
-                <button class="btn btn-dark">
+                <button class="btn btn-dark mb-3">
                     Agregar Educación
                 </button>
             </form>
