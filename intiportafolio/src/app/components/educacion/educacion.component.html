@@ -14,7 +14,7 @@
               <tr *ngFor="let Educacion of educacion">
                   <td><h5>{{Educacion.nombreE}}</h5></td>
                   <td>{{Educacion.descripcionE}}</td>
-                  <td *ngIf="isLogged"> <!--condición *ngIF para que no se vea el bontón sin está logueado-->
+                  <td *ngIf="isLogged"> <!--condición *ngIF para que no se vea el bontón si no está logueado-->
                     <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
                           <!--Botón Editar-->
                           <i class="bi bi-pencil-square"></i></button> 

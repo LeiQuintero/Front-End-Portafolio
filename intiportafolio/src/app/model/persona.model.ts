@@ -5,12 +5,12 @@ export class Persona {
     nombre: string;
     apellido: string;
     descripcion: string;
-   // img: String;
+  
 
     constructor(nombre: string, apellido: string, descripcion: string) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = this.descripcion;
-        //this.img = img;
+      
     }
 }
